@@ -1,6 +1,6 @@
-# S-Sir-Dober
+# S-Sir-Dober-Insight
 Git dedicado a descrição e atividades vinculadas a S Sir Dober
-S Sir Dober
+S Sir Dober Insight
 ![image](https://github.com/user-attachments/assets/481e56ab-6b0d-48fe-914b-c6c120973c01)
 
 
