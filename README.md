@@ -4,6 +4,8 @@ S Sir Dober Insight
 ![image](https://github.com/user-attachments/assets/481e56ab-6b0d-48fe-914b-c6c120973c01)
 
 
+
+
 Projeto para apresentar no curso de graduação em Gestão da Tecnologia da Informação do Instituto Federal do Paraná (IFPR).
 
 Equipe:
