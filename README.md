@@ -79,4 +79,42 @@ Facilitar a colaboração e organização de tarefas entre membros de uma equipe
    ```bash
    git clone https://github.com/seudominio/s-sir-dober.git
    cd s-sir-dober
+    ```
+---
 
+## 📈 Métricas de Sucesso
+
+- ✅ Satisfação do usuário superior a **80%** na versão MVP
+- ✅ Coleta de **feedback estruturado** via formulário integrado à plataforma
+- ✅ Emissão de **relatórios mensais de desempenho**
+- ✅ Realização de **reuniões de retrospectiva** ao final de cada sprint
+
+---
+
+## 📊 Gestão do Projeto
+
+- 📁 **Backlog**: [`project-backlog.html`](./Project%20Backlog%20e%20Roadmap%20Dober%20Insight.html)
+- 🧩 **Sprint 1**: Entrega da **interface de tarefas** e **login funcional**
+- 📅 **Cronograma**: MVP + incrementos planejados em ciclos quinzenais
+- ⚠️ **Matriz de Riscos**: [📎 Documento anexo] – identifica impactos técnicos e operacionais
+
+---
+
+## 📢 Redes Sociais do Projeto
+
+- 🌐 [Facebook](https://facebook.com/seudominio)
+- 📸 [Instagram](https://instagram.com/seudominio)
+- 🐦 [Twitter](https://twitter.com/seudominio)
+- 💼 [LinkedIn](https://linkedin.com/company/seudominio)
+
+---
+
+## 📄 Licença
+
+Distribuído sob a **Licença MIT** — uso livre com atribuição.  
+Para mais detalhes, consulte o arquivo [`LICENSE`](./LICENSE).
+
+---
+
+> Projeto desenvolvido por estudantes do **Instituto Federal do Paraná (IFPR)**  
+> Curso de Gestão da Tecnologia da Informação – 2023/2024
