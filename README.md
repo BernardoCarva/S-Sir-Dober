@@ -105,7 +105,6 @@ Facilitar a colaboração e organização de tarefas entre membros de uma equipe
 - 🌐 [Facebook](https://facebook.com/seudominio)
 - 📸 [Instagram](https://instagram.com/seudominio)
 - 🐦 [Twitter](https://twitter.com/seudominio)
-- 💼 [LinkedIn](https://linkedin.com/company/seudominio)
 
 ---
 
