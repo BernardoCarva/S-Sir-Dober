@@ -55,8 +55,8 @@ Facilitar a colaboração e organização de tarefas entre membros de uma equipe
 
 | Stack         | Ferramentas         | Infraestrutura |
 |---------------|---------------------|----------------|
-| ReactJS       | GitHub, Figma, Slack| AWS            |
-| Node.js       | Quant-UX, Email     | MongoDB        |
+| ReactJS       | GitHub, Figma, Slack| Linode         |
+| Node.js       | Quant-UX, Email     | Supabase       |
 | JavaScript    |                     |                |
 
 ---
