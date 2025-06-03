@@ -1,109 +1,119 @@
-# S-Sir-Dober-Insight
-Git dedicado a descrição e atividades vinculadas a
-S Sir Dober Insight
+
 ![image](https://github.com/user-attachments/assets/481e56ab-6b0d-48fe-914b-c6c120973c01)
 
 
 
+# 🧠 S Sir Dober Insight
 
-Projeto para apresentar no curso de graduação em Gestão da Tecnologia da Informação do Instituto Federal do Paraná (IFPR).
+**Aplicação Web Gratuita para Criação de Páginas de Divulgação Local**
 
-Equipe:
-Bernardo Guido de Carvalho
-Luiz Mauricio
+> Projeto acadêmico apresentado ao curso de Graduação em Gestão da Tecnologia da Informação no Instituto Federal do Paraná (IFPR).
 
-Descrição
-S Sir Dober é uma aplicação web que fornece a criação de páginas para os usuários locais que buscam divulgar seus produtos de uma forma eficiente e acessivel de forma gratuita. Esse projeto pode ser relacionado com o "trabalho decente e crescimento econômico" sendo esse o objetivo 8 do ODS (Objetivos de desenvolvimento sustentável)
+---
 
-b. Redes sociais do projeto:
+## 📌 Visão Geral
 
-Facebook: facebook.com/seudominio
-Instagram: instagram.com/seudominio
-Twitter: twitter.com/seudominio
-LinkedIn: linkedin.com/company/seudominio
-c. Organização da Equipe:
+**S Sir Dober** é uma aplicação web desenvolvida com o propósito de permitir que pequenos empreendedores locais criem suas páginas de divulgação de forma acessível, eficiente e gratuita. Inspirado no ODS 8 da ONU — *"Trabalho Decente e Crescimento Econômico"* —, o projeto visa impulsionar a economia local oferecendo uma plataforma digital inclusiva.
 
-Gerente de Projeto: Responsável pela coordenação geral e comunicação com stakeholders. Comunicação via Slack.
-Desenvolvedor Frontend: Implementa a interface do usuário. Comunicação via GitHub e reuniões semanais.
-Desenvolvedor Backend: Cuida da lógica de servidor e integração. Comunicação via e-mail e reuniões quinzenais.
-Designer UI/UX: Cria protótipos e design visual. Comunicação via Figma e reuniões semanais.
-d. Data criação do projeto: 15 de janeiro de 2023.
+---
 
-2. Concepção
+## 🧑‍💻 Equipe
 
-a. Descrição da visão geral do projeto: Desenvolver uma plataforma de gerenciamento de tarefas que ajude equipes a organizar e priorizar suas atividades de forma eficiente.
+- **Bernardo Guido de Carvalho**  
+- **Luiz Mauricio**
 
-b. Objetivo do projeto: Facilitar a colaboração entre equipes, aumentando a produtividade e a transparência nas tarefas.
+---
 
-c. Escopo do produto:
+## 🧠 Concepção do Projeto
 
-Descrição do produto: Aplicativo web e móvel para gerenciamento de tarefas.
-Principais entregas:
-MVP do aplicativo com funcionalidades básicas (criação, edição e exclusão de tarefas).
-Documentação do usuário.
-Relatório de feedback dos usuários.
-Critérios de aceite:
-O aplicativo deve permitir a criação de tarefas em menos de 3 cliques.
-A taxa de erro (bugs) deve ser inferior a 5% nas funcionalidades principais.
-d. Matriz de Riscos:
+### 🎯 Objetivo
+Facilitar a colaboração e organização de tarefas entre membros de uma equipe, aumentando produtividade e transparência através de uma aplicação web intuitiva.
 
-![image](https://github.com/user-attachments/assets/ada36f72-cf06-42ac-844f-09248a3e7528)
+### 🧱 Escopo do Produto
 
+- **Produto**: Aplicativo Web (React) e Mobile (MVP futuro)
+- **Funcionalidades básicas**:
+  - Criação, edição e exclusão de tarefas
+  - Interface responsiva
+  - Acesso gratuito
+- **Critérios de Aceite**:
+  - Criar uma tarefa em até 3 cliques
+  - Erros inferiores a 5% nas funcionalidades principais
 
-3. Design do software
+---
 
-a. Design Centrado no Usuário: Aplicação das metodologias do Design Thinking e testes de usabilidade.
+## 🎨 Design Centrado no Usuário
 
-b. Personas e mapa de empatia: Desenvolvimento de 3 personas principais que representam os usuários-alvo e criação de um mapa de empatia para entender suas necessidades.
+- **Personas e Empatia**: 3 personas principais com mapa de empatia construído
+- **Storyboard**: Interação do usuário simulada no dia a dia
+- **Guia de Estilo**: Tipografia, cores e componentes definidos
+- **Protótipo (Figma/Quant-UX)**: Interface navegável com testes de usabilidade aplicados
 
-c. Storyboard (contexto de uso): Criação de um storyboard que ilustra como um usuário típico interage com a plataforma em um dia de trabalho.
+---
 
-d. UI Design (guia de estilo): Definição de estilos de botões, cores, fontes e layout que irão compor a interface do aplicativo.
+## 💻 Tecnologias Utilizadas
 
-e. Prototipação do MVP (quant-ux):
+| Stack         | Ferramentas         | Infraestrutura |
+|---------------|---------------------|----------------|
+| ReactJS       | GitHub, Figma, Slack| Linode         |
+| Node.js       | Quant-UX, Email     | Supabase       |
+| JavaScript    |                     |                |
 
-Roteiro de teste: “O usuário deve conseguir criar uma nova tarefa em menos de 3 cliques.”
-Interfaces e links: Criação de telas para login, painel de tarefas, criação e edição de tarefas, com links entre elas.
-4. Desenvolvimento
+---
 
-a. Processo de software: Scrum.
+## 🚀 Desenvolvimento
 
-b. Recursos utilizados:
+- **Metodologia**: SCRUM
+- **Data de início**: 15 de janeiro de 2023
+- **Entrega do MVP**: 3 meses
+- **Reuniões**:
+  - Frontend: semanal via GitHub
+  - Backend: quinzenal via e-mail
+  - UI/UX: semanal via Figma
 
-Tecnologias: React, Node.js, MongoDB.
-Ferramentas de apoio: GitHub, Figma, Slack.
-Linguagem de programação: JavaScript.
-Equipamentos: Computadores com acesso à internet.
-Rede: Servidor AWS.
-c. Resultados esperados: Entrega do MVP em 3 meses, com feedback positivo de pelo menos 80% dos usuários.
+---
 
-d. Instruções para download e execução: Disponibilizar o link do repositório no GitHub com instruções detalhadas de instalação.
+## 📲 Execução e Deploy
 
-e. Licença de uso e distribuição: Licença MIT.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seudominio/s-sir-dober.git
+   cd s-sir-dober
+    ```
+---
 
-Estratégia de marketing digital:
+## 📈 Métricas de Sucesso
 
-Criação de uma landing page para capturar leads.
-Campanhas no Facebook e Instagram para gerar engajamento.
-E-mail marketing para atualizações do projeto.
-Gestão do Projeto
+- ✅ Satisfação do usuário superior a **80%** na versão MVP
+- ✅ Coleta de **feedback estruturado** via formulário integrado à plataforma
+- ✅ Emissão de **relatórios mensais de desempenho**
+- ✅ Realização de **reuniões de retrospectiva** ao final de cada sprint
 
-Arquivo Backlog do Projeto: a. Contexto sequenciador: MVP com funcionalidades básicas e incrementos planejados para futuras atualizações.
+---
 
-b. Product Backlog: Lista priorizada de funcionalidades a serem desenvolvidas.
+## 📊 Gestão do Projeto
 
-c. Detalhamento do Sprint 1: Funcionalidades a serem entregues na primeira iteração.
+- 📁 **Backlog**: [`project-backlog.html`](./Project%20Backlog%20e%20Roadmap%20Dober%20Insight.html)
+- 🧩 **Sprint 1**: Entrega da **interface de tarefas** e **login funcional**
+- 📅 **Cronograma**: MVP + incrementos planejados em ciclos quinzenais
+- ⚠️ **Matriz de Riscos**: [📎 Documento anexo] – identifica impactos técnicos e operacionais
 
-d. Cronograma MVP + incrementos: Cronograma detalhado com prazos de entrega.
+---
 
-Métricas para monitoração e acompanhamento do projeto: Relatórios mensais de desempenho e reuniões de retrospectiva.
+## 📢 Redes Sociais do Projeto
 
-Relatório de encerramento e lições aprendidas: Compilação de insights e recomendações para projetos futuros.
+- 🌐 [Facebook](https://facebook.com/seudominio)
+- 📸 [Instagram](https://instagram.com/seudominio)
+- 🐦 [Twitter](https://twitter.com/seudominio)
 
-Relatório Técnico: Documento que detalha as decisões técnicas e as tecnologias utilizadas.
+---
 
-Plano de Negócio: Estruturação do modelo de negócios, análise de mercado e projeções financeiras.
+## 📄 Licença
 
-Artigo: Publicação sobre os desafios e aprendizados do projeto.
-Anexo:
-file:///C:/Users/berna/AppData/Local/Temp/lu4336c947ym.tmp/lu4336c947yy.tmp/Project%20Backlog%20e%20Roadmap%20Dober%20Insight%20(3)%20(1).htm
+Distribuído sob a **Licença MIT** — uso livre com atribuição.  
+Para mais detalhes, consulte o arquivo [`LICENSE`](./LICENSE).
+
+---
+
+> Projeto desenvolvido por estudantes do **Instituto Federal do Paraná (IFPR)**  
+> Curso de Gestão da Tecnologia da Informação – 2023/2024

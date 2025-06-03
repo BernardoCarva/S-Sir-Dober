@@ -1,25 +1,28 @@
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from supabase import create_client, Client
 from pydantic import BaseModel
 from dotenv import load_dotenv
-import os
 from bcrypt import hashpw, gensalt, checkpw
+import os
 
-# Configuração do Supabase
+# 📦 Carregar variáveis de ambiente do .env
 load_dotenv()
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+SUPABASE_URL: str | None = os.getenv("SUPABASE_URL")
+SUPABASE_KEY: str | None = os.getenv("SUPABASE_KEY")
 
 if not SUPABASE_URL or not SUPABASE_KEY:
-    raise ValueError("Variáveis de ambiente SUPABASE_URL e SUPABASE_KEY são necessárias.")
+    raise ValueError("As variáveis SUPABASE_URL e SUPABASE_KEY são obrigatórias no .env.")
 
+# 🔗 Criar cliente Supabase
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+print("✅ Cliente Supabase criado com sucesso.")
 
-# Inicialização do aplicativo
+# 🚀 Inicializar API FastAPI
 app = FastAPI()
 
-# Configuração de CORS
+# 🔓 CORS liberado (pode ajustar para domínios específicos depois)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -28,7 +31,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Modelos de dados
+# 📄 Modelos de entrada de dados
 class RegisterRequest(BaseModel):
     username: str
     email: str
@@ -38,13 +41,18 @@ class LoginRequest(BaseModel):
     email: str
     password: str
 
+# 🔐 Rota de registro
 @app.post("/register")
 def register(request: RegisterRequest):
+    # Verifica se o e-mail já existe
     response = supabase.table("users").select("email").eq("email", request.email).execute()
     if response.data:
         raise HTTPException(status_code=400, detail="Usuário já registrado.")
 
+    # Criptografa senha
     hashed_password = hashpw(request.password.encode(), gensalt()).decode()
+
+    # Insere novo usuário
     supabase.table("users").insert({
         "username": request.username,
         "email": request.email,
@@ -53,6 +61,7 @@ def register(request: RegisterRequest):
 
     return {"message": "Usuário registrado com sucesso."}
 
+# 🔓 Rota de login
 @app.post("/login")
 def login(request: LoginRequest):
     response = supabase.table("users").select("*").eq("email", request.email).execute()
