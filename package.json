@@ -1,0 +1,34 @@
+{
+  "name": "s-sir-dober",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/user-attachments/assets/481e56ab-6b0d-48fe-914b-c6c120973c01)",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tiptap/react": "^2.12.0",
+    "@tiptap/starter-kit": "^2.12.0",
+    "autoprefixer": "^10.4.21",
+    "jszip": "^3.10.1",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoCarva/S-Sir-Dober.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BernardoCarva/S-Sir-Dober/issues"
+  },
+  "homepage": "https://github.com/BernardoCarva/S-Sir-Dober#readme"
+}
