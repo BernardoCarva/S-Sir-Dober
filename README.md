@@ -94,7 +94,7 @@ Facilitar a colaboração e organização de tarefas entre membros de uma equipe
 ## 📊 Gestão do Projeto
 
 - 📁 **Backlog**: [`project-backlog.html`](./Project%20Backlog%20e%20Roadmap%20Dober%20Insight.html)
-- 🧩 **Sprint 1**: Entrega da **interface de tarefas** e **login funcional**
+- 🧩 **Sprint 1**: [Entrega da **interface de tarefas** e **login funcional**](https://planner.cloud.microsoft/webui/premiumplan/35447982-a0cc-4c9a-810f-8de142b0f080/org/c3e633db-2fb8-4beb-a90d-833dbf1e1edf/view/board?tid=ff2cddd1-4f73-41bd-a5c5-559e89244ab9)
 - 📅 **Cronograma**: MVP + incrementos planejados em ciclos quinzenais
 - ⚠️ **Matriz de Riscos**: [📎 Documento anexo] – identifica impactos técnicos e operacionais
 
@@ -102,10 +102,9 @@ Facilitar a colaboração e organização de tarefas entre membros de uma equipe
 
 ## 📢 Redes Sociais do Projeto
 
-- 🌐 [Facebook](https://facebook.com/seudominio)
-- 📸 [Instagram](https://instagram.com/seudominio)
-- 🐦 [Twitter](https://twitter.com/seudominio)
-
+- 🌐 [Facebook](https://facebook.com)
+- 📸 [Instagram](https://instagram.com)
+- 
 ---
 
 ## 📄 Licença
