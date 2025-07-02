@@ -1,28 +1,27 @@
+import os
+import requests
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from supabase import create_client, Client
 from pydantic import BaseModel
-from dotenv import load_dotenv
 from bcrypt import hashpw, gensalt, checkpw
-import os
+from dotenv import load_dotenv
 
-# 📦 Carregar variáveis de ambiente do .env
 load_dotenv()
 
-SUPABASE_URL: str | None = os.getenv("SUPABASE_URL")
-SUPABASE_KEY: str | None = os.getenv("SUPABASE_KEY")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 if not SUPABASE_URL or not SUPABASE_KEY:
-    raise ValueError("As variáveis SUPABASE_URL e SUPABASE_KEY são obrigatórias no .env.")
+    raise ValueError("Variáveis de ambiente não configuradas.")
 
-# 🔗 Criar cliente Supabase
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
-print("✅ Cliente Supabase criado com sucesso.")
+HEADERS = {
+    "apikey": SUPABASE_KEY,
+    "Authorization": f"Bearer {SUPABASE_KEY}",
+    "Content-Type": "application/json"
+}
 
-# 🚀 Inicializar API FastAPI
 app = FastAPI()
 
-# 🔓 CORS liberado (pode ajustar para domínios específicos depois)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -31,7 +30,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 📄 Modelos de entrada de dados
+# 📄 Modelos de entrada
 class RegisterRequest(BaseModel):
     username: str
     email: str
@@ -42,32 +41,43 @@ class LoginRequest(BaseModel):
     password: str
 
 # 🔐 Rota de registro
+def query_supabase(endpoint: str, method="GET", data=None, params=""):
+    url = f"{SUPABASE_URL}/rest/v1/{endpoint}{params}"
+    if method == "GET":
+        return requests.get(url, headers=HEADERS)
+    elif method == "POST":
+        return requests.post(url, headers=HEADERS, json=data)
 @app.post("/register")
 def register(request: RegisterRequest):
-    # Verifica se o e-mail já existe
-    response = supabase.table("users").select("email").eq("email", request.email).execute()
-    if response.data:
+    check = query_supabase("users", params=f"?select=email&email=eq.{request.email}")
+    if check.json():
         raise HTTPException(status_code=400, detail="Usuário já registrado.")
 
-    # Criptografa senha
-    hashed_password = hashpw(request.password.encode(), gensalt()).decode()
-
-    # Insere novo usuário
-    supabase.table("users").insert({
+    hashed = hashpw(request.password.encode(), gensalt()).decode()
+    data = {
         "username": request.username,
         "email": request.email,
-        "password_hash": hashed_password
-    }).execute()
+        "password_hash": hashed
+    }
+
+    insert = query_supabase("users", method="POST", data=data)
+    if insert.status_code >= 400:
+        raise HTTPException(status_code=500, detail="Erro ao registrar.")
 
     return {"message": "Usuário registrado com sucesso."}
 
 # 🔓 Rota de login
 @app.post("/login")
 def login(request: LoginRequest):
-    response = supabase.table("users").select("*").eq("email", request.email).execute()
-    user = response.data[0] if response.data else None
-
-    if user and checkpw(request.password.encode(), user["password_hash"].encode()):
+    response = query_supabase("users", params=f"?select=*&email=eq.{request.email}")
+    users = response.json()
+    if users and checkpw(request.password.encode(), users[0]["password_hash"].encode()):
         return {"message": "Login bem-sucedido."}
 
     raise HTTPException(status_code=401, detail="Credenciais inválidas.")
+
+
+# ✅ Rota simples de teste
+@app.get("/api/data")
+def get_data():
+    return {"message": "Hello from the backend!"}
