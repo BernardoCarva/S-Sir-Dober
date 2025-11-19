@@ -19,8 +19,8 @@
 
 ## 🧑‍💻 Equipe
 
-- **Bernardo Guido de Carvalho**  
-- **Luiz Mauricio**
+- **Bernardo Guido de Carvalho | Desenvolvedor BackEnd**  
+- **Luiz Mauricio | Desenvolvedor FrontEnd**
 
 ---
 
@@ -39,6 +39,14 @@ Facilitar a colaboração e organização de tarefas entre membros de uma equipe
 - **Critérios de Aceite**:
   - Criar uma tarefa em até 3 cliques
   - Erros inferiores a 5% nas funcionalidades principais
+
+---
+
+### LINCENÇA DO PROJETO: CC-BY-AS 
+
+O que permite: Distribuir, remixar, adaptar e construir sobre o material, inclusive para fins comerciais.
+
+Restrições: Requer atribuição e que as obras derivadas sejam licenciadas sob os mesmos termos.
 
 ---
 
