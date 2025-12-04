@@ -112,7 +112,7 @@ Restrições: Requer atribuição e que as obras derivadas sejam licenciadas sob
 
 - 🌐 [Facebook](https://facebook.com)
 - 📸 [Instagram](https://instagram.com)
-- 
+- [Site](https://sir-insight.com/)
 ---
 
 ## 📄 Licença
